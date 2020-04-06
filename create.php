@@ -55,12 +55,61 @@ if(isset($_POST['ok'])){
             <h3 class='mx-auto text-center text-black' style='font-size:20px;'>{$desc}</h3>
             </div>
 
+            <div class='mx-auto' style='width: 625px;' id='outerContainer'>
+              <div id='container'>
+                <div class='circle' style='animation-delay: 0s'></div>
+                <div class='circle' style='animation-delay: 1s'></div>
+                <div class='circle' style='animation-delay: 2s'></div>
+                <div class='circle' style='animation-delay: 3s'></div>
+              </div>
+            </div>
+
             <style>
             body {
               background-image: url({$background});
               background-repeat: no-repeat;
               background-attachment: fixed;
               background-size: cover;
+            }
+
+            #container {
+              width: 600px;
+              height: 400px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              overflow: hidden;
+              position: relative;
+            }
+         
+            .circle {
+              border-radius: 50%;
+              background-color: black;
+              width: 150px;
+              height: 150px;
+              position: absolute;
+              opacity: 0;
+              animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+            }
+         
+            .item {
+              z-index: 100;
+              padding: 5px;
+            }
+         
+            .item img {
+              width: 150px;
+            }
+
+            @keyframes scaleIn {
+              from {
+                transform: scale(.5, .5);
+                opacity: .5;
+              }
+              to {
+                transform: scale(2.5, 2.5);
+                opacity: 0;
+              }
             }
             </style>
 
@@ -69,7 +118,6 @@ if(isset($_POST['ok'])){
         ";
         file_put_contents($file, $current);        
     }
-
 }
 ?>
 </body>

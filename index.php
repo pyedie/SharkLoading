@@ -7,6 +7,6 @@
 </head>
 <body>
 <h3>Voulez vous crée un loadingscreen ?</h3>
-<button name="create" onclick="window.location.href = 'servername.php'">Oui</button>
+<button name="create" onclick="window.location.href = 'create.php'">Oui</button>
 </body>
 </html>
