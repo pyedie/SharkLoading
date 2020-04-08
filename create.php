@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Sharkloading</title>
 </head>
 <body>
+<div class="alert alert-success sticky-top" id="success-alert" role="alert">
+  Votre loadingscreen à été crée avec succès ! : <a href="/loadingscreen.html" class="alert-link">Votre loadingscreen</a>
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+</div>
+<script>$("#success-alert").hide();</script>
 <h3 class="text-white text-md-left font-italic badge badge-dark text-wrap">By Sharki (Discord: Sharki#6540)</h3>
 <h3 class="mx-auto text-center text-white">SharkLoading</h3>
 &nbsp
@@ -35,7 +43,7 @@
     <label class="text-white">Arriere plan: (Obligatoire)</label>
     <input type="text" class="form-control" name="background" id="background" placeholder="Exemple: https://image.com/image.jpg">
   </div>
-  <button type="submit" class="btn btn-success" name="ok">Accepter</button>
+  <button type="submit" class="btn btn-success" id="ok" name="ok">Accepter</button>
 </form>
 
 <style>
@@ -61,6 +69,11 @@ if($couleur == 'text-white'){
 
 if(isset($_POST['ok'])){
     if($servername && $background){
+?>
+      <script type="text/javascript">
+        $("#success-alert").show();
+      </script>
+<?php
         $file = 'loadingscreen.html';
         $current = "
         <!doctype html>
@@ -139,7 +152,7 @@ if(isset($_POST['ok'])){
             </body>
         </html>
         ";
-        file_put_contents($file, $current);        
+        file_put_contents($file, $current);     
     }
 }
 ?>
