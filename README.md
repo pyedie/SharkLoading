@@ -6,5 +6,5 @@ Interface: (Bootstrap à était utiliser pour ce projet)
 ![Interface](Interface.png)
 
 Exemple de loadingscreen fait avec SharkLoading: (le rond au milieu est une animation)
-![Exemple1](Exemple 1.png)
+![Exemple1](https://github.com/SharkiPro/SharkLoading/blob/master/exemples/Exemple%201.png?raw=true)
 ![Exemple2](Exemple 2.png)
