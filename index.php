@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,6 +44,10 @@
   <select class="custom-select" name="couleur">
     <option value="text-dark">Noir</option>
     <option value="text-white">Blanc</option>
+    <option value="text-secondary">Gris</option>
+    <option value="text-success">Vert</option>
+    <option value="text-primary">Bleu</option>
+    <option value="text-danger">Rouge</option>
   </select>
   </div>
   <button onclick="Etape('subject1','etape2');" style="margin-left: 47.5%;" type="button" class="btn btn-success text-center Sharkloading_text">Valider</button>
@@ -52,7 +56,7 @@
   <div id="etape2" class="mx-auto w-50 p-3 bg-white rounded animate-page" style="display:none; height: 220px;">
   <h2 class="text-center text-dark Sharkloading_text">Voulez vous mettre une déscription ?</h2><br>
   <input id="subject2" type="text" class="form-control mx-auto" style="height: 50px; display:none;" name="subject2" placeholder="Exemple: Rien à dire"><br>
-  <button id="bouton2" onclick="Etape('subject2','etape3'); document.getElementById('etape3').scrollIntoView();" style="margin-left: 47.5%; display:none;" type="button" class="btn btn-success text-center Sharkloading_text">Valider</button>
+  <button id="bouton2" onclick="Etape('subject2','etape3'); Scroll('etape3');" style="margin-left: 47.5%; display:none;" type="button" class="btn btn-success text-center Sharkloading_text">Valider</button>
   <button id="Oui2" onclick='Desc();' style="margin-left: 23.75%;" type="button" class="btn btn-success text-center Sharkloading_text">Oui</button>
   <button id="Non" onclick="Get('etape2','etape3')" style="margin-left: 42.5%;" type="button" class="btn btn-danger text-center Sharkloading_text">Non</button>
   </div><br>
@@ -60,7 +64,7 @@
   <div id="etape3" class="mx-auto w-50 p-3 bg-white rounded animate-page" style="display:none; height: 220px;">
   <h2 class="text-center text-dark Sharkloading_text">Voulez vous mettre votre logo ?</h2><br>
   <input id="logo" type="text" class="form-control mx-auto" style="height: 50px; display:none;" name="logo" placeholder="Exemple: https://image.com/image.jpg"><br>
-  <button id="bouton3" onclick="Etape('logo','etape4'); document.getElementById('etape4').scrollIntoView();" style="margin-left: 47.5%; display:none;" type="button" class="btn btn-success text-center Sharkloading_text">Valider</button>
+  <button id="bouton3" onclick="Etape('logo','etape4'); Scroll('etape4');" style="margin-left: 47.5%; display:none;" type="button" class="btn btn-success text-center Sharkloading_text">Valider</button>
   <button id="Oui3" onclick='Logo();' style="margin-left: 23.75%;" type="button" class="btn btn-success text-center Sharkloading_text">Oui</button>
   <button id="Non2" onclick="Get('etape3','etape4')" style="margin-left: 42.5%;" type="button" class="btn btn-danger text-center Sharkloading_text">Non</button>
   </div><br>
@@ -68,7 +72,7 @@
   <div id="etape4" class="mx-auto w-50 p-3 bg-white rounded animate-page" style="display:none; height: 220px;">
   <h2 class="text-center text-dark Sharkloading_text">Arrière plan:</h2><br>
   <input type="text" class="form-control mx-auto" style="height: 50px;" name="background" id="background" placeholder="Exemple: https://image.com/image.jpg"><br>
-  <button onclick="Etape('etape4','validation'); document.getElementById('validation').scrollIntoView();" style="margin-left: 47.5%;" type="button" class="btn btn-success text-center Sharkloading_text">Valider</button>
+  <button onclick="Etape('etape4','validation'); Scroll('validation');" style="margin-left: 47.5%;" type="button" class="btn btn-success text-center Sharkloading_text">Valider</button>
   </div><br>
 
   <div id="validation" class="mx-auto w-50 p-3 bg-white rounded animate-page" style="display:none; height: 220px;">
@@ -83,6 +87,10 @@ var time;
 
 function Timer() {
   time = setTimeout(showPage, 3000);
+}
+
+function Scroll(id) {
+  document.getElementById(id).scrollIntoView();
 }
 
 function Get(etapeold,etapenew) {
@@ -128,9 +136,18 @@ $servername = !empty($_POST['subject1'])?$_POST['subject1']:null;
 $desc = !empty($_POST['subject2'])?$_POST['subject2']:null;
 $background = !empty($_POST['background'])?$_POST['background']:null;
 $couleur = !empty($_POST['couleur'])?$_POST['couleur']:"text-black";
+
 $couleurbg = '#000';
 if($couleur == 'text-white'){
   $couleurbg = '#fff';
+  }elseif ($couleur == 'text-primary'){
+      $couleurbg = '#007FFF';
+  }elseif ($couleur == 'text-secondary'){
+      $couleurbg = '#C0C0C0';  
+  }elseif($couleur == 'text-success'){
+      $couleurbg = '#32CD32';
+  }elseif($couleur == 'text-danger'){
+      $couleurbg = '#FF0000';
 }
 
 if(isset($_POST['ok'])){
