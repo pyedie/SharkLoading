@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>Sharkloading | Loading...</title>
 </head>
 <body onload="Timer()" style="background-color:#000000;">
@@ -14,6 +15,7 @@
 
 <div style="display:none;" id="Page" class="animate-page">
   <p class="text-left text-white Sharkloading_text">By Sharki (discord: Sharki#6540)</p>
+  <a class="github-button" href="https://github.com/SharkiPro/SharkLoading" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star SharkiPro/SharkLoading on GitHub">Star</a>
   <h1 class="text-center text-white Sharkloading_text">Sharkloading</h1>
   <p class="text-center text-white Sharkloading_text">C'est magique !</p>
 
