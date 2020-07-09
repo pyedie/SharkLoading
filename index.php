@@ -20,18 +20,18 @@
   <p class="text-center text-white Sharkloading_text">C'est magique !</p>
 
   <div class="alert alert-success sticky-top" id="success-alert" role="alert">
-  Votre loadingscreen à été crée avec succès ! : <a href="/loadingscreen.html" class="alert-link">Votre loadingscreen</a>
+  Votre loadingscreen a été crée avec succès ! : <a href="/loadingscreen.html" class="alert-link">Cliquez ici pour accéder à votre loadingscreen.</a>
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   </div>
   <script>$("#success-alert").hide();</script>
   <div class="alert alert-danger" style="weight: 20%;" id="error-alert" role="alert">
-  <a>Vous n'avez pas remplie les champs correctement !</a>
+  <a>Vous n'avez pas rempli les champs correctement !</a>
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   </div>
   <script>$("#error-alert").hide();</script>
 
   <div class="mx-auto w-50 p-3 bg-white rounded" style="height: 200px;">
-  <h2 class="text-center text-dark Sharkloading_text">Voulez vous crée un loadingscreen ?</h2><br>
+  <h2 class="text-center text-dark Sharkloading_text">Voulez-vous créer un loadingscreen ?</h2><br>
   <button id="Bouton1" onclick='document.getElementById("etape1").style.display = "block";' style="margin-left: 47.5%;" type="submit" class="btn btn-success text-center Sharkloading_text">Oui</button>
   </div><br>
 
@@ -41,7 +41,7 @@
   <input type="text" class="form-control mx-auto" style="height: 50px;" name="subject1" id="subject1" placeholder="Exemple: Sharkland"><br>
   <div class="input-group mb-3">
   <div class="input-group-prepend">
-    <label class="input-group-text">Couleur du text</label>
+    <label class="input-group-text">Couleur du texte</label>
   </div>
   <select class="custom-select" name="couleur">
     <option value="text-dark">Noir</option>
@@ -56,7 +56,7 @@
   </div><br>
 
   <div id="etape2" class="mx-auto w-50 p-3 bg-white rounded animate-page" style="display:none; height: 220px;">
-  <h2 class="text-center text-dark Sharkloading_text">Voulez vous mettre une déscription ?</h2><br>
+  <h2 class="text-center text-dark Sharkloading_text">Voulez-vous mettre une description ?</h2><br>
   <input id="subject2" type="text" class="form-control mx-auto" style="height: 50px; display:none;" name="subject2" placeholder="Exemple: Rien à dire"><br>
   <button id="bouton2" onclick="Etape('subject2','etape3'); Scroll('etape3');" style="margin-left: 47.5%; display:none;" type="button" class="btn btn-success text-center Sharkloading_text">Valider</button>
   <button id="Oui2" onclick='Desc();' style="margin-left: 23.75%;" type="button" class="btn btn-success text-center Sharkloading_text">Oui</button>
@@ -64,7 +64,7 @@
   </div><br>
 
   <div id="etape3" class="mx-auto w-50 p-3 bg-white rounded animate-page" style="display:none; height: 220px;">
-  <h2 class="text-center text-dark Sharkloading_text">Voulez vous mettre votre logo ?</h2><br>
+  <h2 class="text-center text-dark Sharkloading_text">Voulez-vous inclure un logo ?</h2><br>
   <input id="logo" type="text" class="form-control mx-auto" style="height: 50px; display:none;" name="logo" placeholder="Exemple: https://image.com/image.jpg"><br>
   <button id="bouton3" onclick="Etape('logo','etape4'); Scroll('etape4');" style="margin-left: 47.5%; display:none;" type="button" class="btn btn-success text-center Sharkloading_text">Valider</button>
   <button id="Oui3" onclick='Logo();' style="margin-left: 23.75%;" type="button" class="btn btn-success text-center Sharkloading_text">Oui</button>
@@ -78,7 +78,7 @@
   </div><br>
 
   <div id="validation" class="mx-auto w-50 p-3 bg-white rounded animate-page" style="display:none; height: 220px;">
-  <h2 class="text-center text-dark Sharkloading_text">Valider vous la création de votre loadingscreen ?</h2><br>
+  <h2 class="text-center text-dark Sharkloading_text">Souhaitez-vous valider la création de votre loadingscreen ?</h2><br>
   <button style="margin-left: 47.5%;" type="submit" id="ok" name="ok" class="btn btn-success text-center Sharkloading_text">Oui</button>
   </div><br>
 </form>
