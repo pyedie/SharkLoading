@@ -1,28 +1,10 @@
 # SharkLoading
+génerateur de page (avec background, text, image etc..)
 
-*SharkLoading*  is a webpage generator that include background, texts and images.
+SharkLoading est un générateur de page html pouvant servir à faire un loadingscreen de façons trés simple.
+Interface: (Bootstrap à était utiliser pour ce projet)
+![Interface](https://github.com/SharkiPro/SharkLoading/blob/master/exemples/Interface.PNG?raw=true)
 
-The generator was created to easely create loadingscreens for the game named Garry's Mod.
-
->Note: This template uses Bootstrap
-
-### Interface is like this :
-
-![Interface](https://i.gyazo.com/8a0e429c1d35a7a298c878c706bd8b47.png)
-
-
-### Installation
-
-You just have to download files [here](https://github.com/SharkiPro/SharkLoading/archive/master.zip)
-
-> Pro Tip: You need a web server and php to use this template
-
-### Contributors
-
-- [SharkiPro](https://github.com/SharkiPro)
-- [MaeveLaOuf](https://github.com/MaeveLaOuf)
-
-License
-----
-
-Creative Commons Legal Code
+Exemple de loadingscreen fait avec SharkLoading: (le rond au milieu est une animation)
+![Exemple1](https://github.com/SharkiPro/SharkLoading/blob/master/exemples/Exemple%201.png?raw=true)
+![Exemple2](https://github.com/SharkiPro/SharkLoading/blob/master/exemples/Exemple%202.png?raw=true)
