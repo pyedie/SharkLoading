@@ -1,5 +1,5 @@
 <?php 
-$langues = [
+$langues = [ 
     "fr"=>[
         "lang"=>"Veuillez choisir votre langue",
         "desc"=>"C'est magique !",
