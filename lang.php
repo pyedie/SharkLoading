@@ -1,5 +1,4 @@
 <?php 
-//1er fichier
 $langues = [
     "fr"=>[
         "lang"=>"Veuillez choisir votre langue",
