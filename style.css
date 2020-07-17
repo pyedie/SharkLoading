@@ -1,0 +1,78 @@
+body {
+    background-color:#000000;
+}
+
+.choose {
+    margin-left: 47.5%;
+}
+
+.Sharkloading_text {
+    font-family: 'Indie Flower', cursive;
+  }
+
+  #Sharkloading_text_introduction {
+    font-family: 'Indie Flower', cursive;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+    margin-top: -75px;
+  }
+
+  .loader {
+    margin-top: -0.25rem;
+    border-top: 16px solid #FFF;
+    border-radius: 50%;
+    position: absolute;
+    left: 47.5%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+    margin-top: -75px;
+    animation: spin 4s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-page {
+    position: relative;
+    -webkit-animation-name: animatepage;
+    -webkit-animation-duration: 1s;
+    animation-name: animatepage;
+    animation-duration: 1s
+  }
+
+  @-webkit-keyframes animatepage {
+    from {
+      bottom: -100px;
+      opacity: 0
+    }
+
+    to {
+      bottom: 0px;
+      opacity: 1
+    }
+  }
+
+  @keyframes animatepage {
+    from {
+      bottom: -100px;
+      opacity: 0
+    }
+
+    to {
+      bottom: 0;
+      opacity: 1
+    }
+  }
