@@ -21,12 +21,13 @@
         <h1 class="text-center text-white Sharkloading_text">Sharkloading</h1>
         <p class="text-center text-white Sharkloading_text">It's Magic</p>
 
-        <div class="mx-auto w-50 p-3 bg-white rounded" style="height: 300px;">
+        <div class="mx-auto w-50 p-3 bg-white rounded" style="height: 350px;">
             <h2 class="text-center text-dark Sharkloading_text">What language you want the loader to be ?</h2><br>
             <div class="choose">
                 <a href="./fr/"><button style="margin-left: 47.5%;" type="submit" class="btn btn-success text-center Sharkloading_text">French </button></a><br><br>
                 <a href="./sw/"><button style="margin-left: 47.5%;" type="submit" class="btn btn-success text-center Sharkloading_text">Swedish</button></a><br><br>
                 <a href="./en/"><button style="margin-left: 47.5%;" type="submit" class="btn btn-success text-center Sharkloading_text">English</button></a><br><br>
+                <a href="./de/"><button style="margin-left: 47.5%;" type="submit" class="btn btn-success text-center Sharkloading_text">Deutsch</button></a><br><br>
             </div>
         </div><br>
     </div>
