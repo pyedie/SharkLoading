@@ -6,14 +6,14 @@ The generator was created to easely create loadingscreens for the game named Gar
 
 >Note: This template uses Bootstrap
 
-### Interface is like this :
+### Interface is like that :
 
-![Interface](https://i.gyazo.com/8a0e429c1d35a7a298c878c706bd8b47.png)
+![Interface](https://i.gyazo.com/53beb39b1ee1799dd6cfddaf881966e0.png)
 
 
 ### Installation
 
-You just have to download files [here](https://github.com/SharkiPro/SharkLoading/archive/master.zip)
+You just have to download the lastest stable version [here](https://github.com/SharkiPro/SharkLoading/archive/v1.0.zip)
 
 > Pro Tip: You need a web server and php to use this template
 
